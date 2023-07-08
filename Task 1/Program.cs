@@ -1,6 +1,9 @@
 ﻿// Напишите программу, которая выводит случайное число от 10 до 99 и определяет наиболшую цифру в нем
 
-int N = new Random().Next(10, 100);
+Random randnum = new Random();
+int N = randnum.Next(10, 100);
+
+//int N = new Random().Next(10, 100);
 
 System.Console.WriteLine(N);
 int maxFigure = 0;
