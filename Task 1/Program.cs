@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая выводит случайное число от 10 до 99 и определяет наиболшую цифру в нем
+
+int N = new Random().Next(10, 100);
+
+System.Console.WriteLine(N);
+int maxFigure = 0;
+
+if (N/10>N%10)
+{
+    maxFigure = N / 10;
+}
+else
+{
+    maxFigure = N % 10;
+}
+
+System.Console.WriteLine($"Максимальная цифра числа {N} равна {maxFigure}");
